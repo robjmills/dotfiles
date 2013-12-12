@@ -13,7 +13,7 @@ installcask codebug
 installcask cornerstone
 installcask dropbox
 installcask firefox
-installcask flux
+installcask f-lux
 installcask github
 installcask google-chrome
 installcask handbrake
@@ -27,5 +27,6 @@ installcask spotify
 installcask sublime-text
 installcask the-unarchiver
 installcask transmission
+installcask vagrant
 installcask virtualbox
 installcask vlc

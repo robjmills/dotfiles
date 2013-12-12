@@ -15,7 +15,7 @@ alias f='open -a Finder ./'
 alias g="git"
 alias h="history"
 alias artisan="php artisan"
-alias vhosts='sudo vi /private/etc/apache2/extra/httpd-vhosts.conf'
+alias vhosts='vi /private/etc/apache2/extra/httpd-vhosts.conf'
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -42,9 +42,6 @@ export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
-
-# Gzip-enabled `curl`
-alias gurl='curl --compressed'
 
 # Get week number
 alias week='date +%V'
@@ -84,21 +81,10 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo 
 # Usage: `mergepdf -o output.pdf input{1,2,3}.pdf`
 alias mergepdf='/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py'
 
-# Disable Spotlight
-alias spotoff="sudo mdutil -a -i off"
-# Enable Spotlight
-alias spoton="sudo mdutil -a -i on"
-
 # Intuitive map function
 # For example, to list all directories that contain a certain file:
 # find . -name .gitattributes | map dirname
 alias map="xargs -n1"
-
-# One of @janmoesen’s ProTip™s
-for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
-	alias "$method"="lwp-request -m '$method'"
-done
-
 
 # Kill all the tabs in Chrome to free up memory
 # [C] explained: http://www.commandlinefu.com/commands/view/402/exclude-grep-from-your-grepped-output-of-ps-alias-included-in-description

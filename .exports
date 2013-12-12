@@ -1,7 +1,3 @@
-# Beery prompt
-export PS1="🍺  > \w "
-export CLICOLOR=1
-
 # Make vim the default editor
 export EDITOR="vim"
 
