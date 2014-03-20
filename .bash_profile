@@ -1,5 +1,5 @@
 # Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$(brew --prefix mysql)/bin:/usr/local/share/npm/bin:$PATH"
+export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$(brew --prefix mysql)/bin:/usr/local/share/npm/bin:~/.composer/vendor/bin:$PATH"
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
