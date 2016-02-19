@@ -14,9 +14,9 @@ brew install wget --enable-iri
 brew tap homebrew/dupes
 brew install homebrew/dupes/grep
 brew tap josegonzalez/homebrew-php
-brew install php54
-brew install php54-mcrypt
-brew install php54-xdebug
+brew install php56
+brew install php56-mcrypt
+brew install php56-xdebug
 
 # Install other useful binaries
 brew install ack
@@ -31,7 +31,7 @@ brew install phantomjs
 brew install sqlite
 brew install redis
 brew install tree
-brew install bash-completion
+brew install wget
 
 brew tap homebrew/versions
 
