@@ -66,3 +66,6 @@ When setting up a new Mac, you may want to install some common [Homebrew](http:/
 ```bash
 ./.brew
 ```
+
+### If using zsh
+Copy contents of `zsh_custom` to location of ZSH_CUSTOM (/Users/robmills/.oh-my-zsh/custom)
