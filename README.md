@@ -68,4 +68,13 @@ When setting up a new Mac, you may want to install some common [Homebrew](http:/
 ```
 
 ### If using zsh
+
+Geting started with zsh:
+
+https://www.xplatform.rocks/2015/05/07/setting-up-iterm2-with-oh-my-zsh-and-powerline-on-osx/
+https://gist.github.com/kevin-smets/8568070
+
 Copy contents of `zsh_custom` to location of `ZSH_CUSTOM` (likely `/Users/robmills/.oh-my-zsh/custom`)
+```bash
+cp cd 
+```
