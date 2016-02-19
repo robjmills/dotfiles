@@ -75,6 +75,3 @@ https://www.xplatform.rocks/2015/05/07/setting-up-iterm2-with-oh-my-zsh-and-powe
 https://gist.github.com/kevin-smets/8568070
 
 Copy contents of `zsh_custom` to location of `ZSH_CUSTOM` (likely `/Users/robmills/.oh-my-zsh/custom`)
-```bash
-cp cd 
-```
