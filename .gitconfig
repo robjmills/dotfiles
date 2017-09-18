@@ -58,20 +58,21 @@
 	changed = green
 	untracked = cyan
 
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[diff]
+  tool = pstorm
+[difftool]
+  prompt = false
+[difftool.pstorm]
+  cmd = /usr/local/bin/pstorm diff "$LOCAL" "$REMOTE"
 [merge]
-	# Include summaries of merged commits in newly created merge commit messages
-	log = true
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustExitCode = true
+  tool = pstorm
+  trustExitCode = true
+  # Include summaries of merged commits in newly created merge commit messages
+  log = true
+[mergetool.pstorm]
+  cmd = /usr/local/bin/pstorm merge "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
+  trustExitCode = true
+
 [mergetool]
 	keepBackup = false
 
@@ -94,7 +95,7 @@
 	email = robjmills@gmail.com
 
 [push]
-	default = matching
+	default = simple
 [filter "media"]
 	required = true
 	clean = git media clean %f
@@ -103,3 +104,7 @@
 	clean = git hawser clean %f
 	smudge = git hawser smudge %f
 	required = true
+[oh-my-zsh]
+	hide-status = 1
+[pull]
+	default = simple
