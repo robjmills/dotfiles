@@ -41,7 +41,6 @@ cask 'spotify'
 cask 'textual'
 cask 'vagrant'
 cask 'virtualbox'
-cask 'vlc'
 
 # Quicklook
 cask 'qlmarkdown'
@@ -49,6 +48,10 @@ cask 'quicklook-json'
 cask 'quicklook-csv'
 
 # Fonts
+cask 'font-fira-code'
+cask 'font-fira-mono-for-powerline'
+cask 'font-meslo-lg'
+cask 'font-meslo-for-powerline'
 cask 'font-source-code-pro-for-powerline'
 cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
