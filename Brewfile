@@ -50,6 +50,8 @@ cask 'quicklook-csv'
 # Fonts
 cask 'font-fira-code'
 cask 'font-fira-mono-for-powerline'
+cask 'font-inconsolata'
+cask 'font-inconsolata-for-powerline'
 cask 'font-meslo-lg'
 cask 'font-meslo-for-powerline'
 cask 'font-source-code-pro-for-powerline'
