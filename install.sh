@@ -21,6 +21,9 @@ chsh -s $(which zsh)
 curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
 
+# Install global NPM packages
+npm install --global pure-prompt
+
 # Create a Sites directory
 # This is a default directory for macOS user accounts but doesn't comes pre-installed
 mkdir $HOME/Sites

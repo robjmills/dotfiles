@@ -8,11 +8,10 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-#ZSH_THEME="robbyrussell"
-#ZSH_THEME="agnoster"
-ZSH_THEME="powerlevel9k/powerlevel9k"
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator time)
+ZSH_THEME=""
+#ZSH_THEME="powerlevel9k/powerlevel9k"
+#POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs)
+#POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator time)
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -50,7 +49,7 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator time)
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
+ZSH_CUSTOM=$DOTFILES
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -64,6 +63,9 @@ export PATH="/Users/rob/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/mysql/
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
+
+autoload -U promptinit; promptinit
+prompt pure
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -89,3 +91,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/robmills/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/robmills/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/robmills/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/robmills/Downloads/google-cloud-sdk/completion.zsh.inc'; fi

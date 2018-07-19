@@ -6,10 +6,12 @@ tap 'caskroom/eid'
 tap 'caskroom/fonts'
 tap 'caskroom/versions'
 tap 'homebrew/bundle'
+tap 'boz/repo'
 
 # Install ZSH
 brew 'zsh'
 brew 'zsh-completions'
+brew 'zsh-syntax-highlighting'
 
 
 # Install Binaries
@@ -22,6 +24,13 @@ brew 'wget'
 # Development
 brew 'php'
 brew 'mysql'
+brew 'kubectl'
+brew 'ansible'
+brew 'boz/repo/kail'
+brew 'redis'
+brew 'dnsmasq'
+brew 'php@7.1'
+
 
 # Apps
 cask 'aerial'
@@ -33,7 +42,7 @@ cask 'imageoptim'
 cask 'jetbrains-toolbox'
 cask 'noizio'
 cask 'onepassword'
-# cask 'phpstorm' # handled by jetbrains-toolbox
+cask 'pocket'
 cask 'reeder'
 cask 'sequel-pro'
 cask 'slack'
