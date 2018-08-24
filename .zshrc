@@ -60,6 +60,8 @@ plugins=(git brew catimg composer history)
 # User configuration
 
 export PATH="/Users/rob/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/mysql/bin:/usr/local/share/npm/bin:~/.composer/vendor/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin"
+export NVM_DIR="$HOME/.nvm"
+  . "/usr/local/opt/nvm/nvm.sh"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -92,7 +94,9 @@ prompt pure
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/robmills/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/robmills/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/robmills/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/robmills/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/robmills/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/robmills/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/Users/robmills/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/robmills/google-cloud-sdk/completion.zsh.inc'; fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

@@ -23,6 +23,8 @@ mv composer.phar /usr/local/bin/composer
 
 # Install global NPM packages
 npm install --global pure-prompt
+npm install --global tldr
+
 
 # Create a Sites directory
 # This is a default directory for macOS user accounts but doesn't comes pre-installed

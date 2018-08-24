@@ -30,6 +30,9 @@ brew 'boz/repo/kail'
 brew 'redis'
 brew 'dnsmasq'
 brew 'php@7.1'
+brew 'fzf'
+brew 'diff-so-fancy'
+brew 'bat'
 
 
 # Apps
@@ -71,6 +74,7 @@ cask 'font-source-serif-pro'
 # Install Mac App Store apps
 mas '1Password', id: 443987910
 mas 'Giphy Capture', id: 668208984
+mas 'Noizio', id: 928871589
 mas 'The Unarchiver', id: 425424353
 mas 'Tweetbot', id: 1384080005
 mas 'WhatsApp', id: 1147396723 
