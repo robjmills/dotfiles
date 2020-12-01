@@ -1,6 +1,3 @@
-alias bkvu='cd ~/code/basekit/config/vagrant; vagrant up'
-alias bkv='cd ~/code/basekit/config/vagrant;'
-alias vssh="cd ~/code/basekit/config/vagrant; vagrant ssh -- -t 'cd code/basekit; /bin/bash'"
 alias bk='cd ~/code/basekit'
 alias bkl='bk && tail -f log/*.log log/php-fpm/*.log'
 alias bkdl='bk && docker-compose logs --tail=100 -f'
