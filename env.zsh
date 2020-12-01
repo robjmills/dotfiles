@@ -1,1 +1,1 @@
-export BK_NFS_SYNC=yes
+export BK_NFS_SYNC=no

@@ -7,6 +7,7 @@ alias codecept=./vendor/bin/codecept
 alias reloadcli="source $HOME/.zshrc"
 alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias weather="curl -4 wttr.in/bristol"
+alias cat="bat"
 
 # Directories
 alias dl="cd ~/Downloads"
@@ -22,13 +23,6 @@ alias vhalt="vagrant halt"
 alias vssh="vagrant ssh"
 alias vreload="vagrant reload"
 alias vrebuild="vagrant destroy --force && vagrant up"
-
-# Docker
-alias dstop="docker stop $(docker ps -a -q)"
-alias dpurgecontainers="dstop && docker rm $(docker ps -a -q)"
-alias dpurgeimages="docker rmi $(docker images -q)"
-dbuild() { docker build -t=$1 .; }
-dbash() { docker exec -it $(docker ps -aqf "name=$1") bash; }
 
 # Git
 alias gst="git status"
@@ -46,6 +40,8 @@ alias ll="ls -lhaFG"
 
 # List only directories
 alias lsd='ls -lFG | grep "^d"'
+
+alias hr="printf '%*s\n' \"${COLUMNS:-$(tput cols)}\" '' | tr ' ' -"
 
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
